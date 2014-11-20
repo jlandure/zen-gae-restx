@@ -1,0 +1,17 @@
+title: should create a user
+given:
+  - uuids : "123"
+wts:
+  - when: |
+          POST users
+          { "firstName": "Manuel",
+            "lastName": "B",
+            "email": "manuel@emn.fr",
+            "password": "julien"
+          }
+    then: |
+          { "firstName": "Manuel",
+            "lastName": "B",
+            "email": "manuel@emn.fr",
+            "password": "julien"
+          }

@@ -1,0 +1,7 @@
+title: should say com.zenika.restx.hello
+given:
+  - time: 2013-03-31T14:33:18.272+02:00
+wts:
+  - when: GET message?who=xavier
+    then: |
+      {"message":"com.zenika.restx.hello xavier, it's 14:33:18"}
